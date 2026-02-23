@@ -1,0 +1,7 @@
+{
+  "name": "DVS Polytechnic College",
+  "description": "Official website of DVS Polytechnic College, providing quality technical education and excellence in engineering.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
