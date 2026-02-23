@@ -129,8 +129,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Departments Preview */}
+      {/* Principal's Message Section */}
       <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-white rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col lg:flex-row items-stretch">
+            <div className="w-full lg:w-2/5 relative min-h-[400px]">
+              <Image 
+                src="https://picsum.photos/800/1000?grayscale" 
+                alt="Principal Dr. B. R. Patil" 
+                fill 
+                className="object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-8 text-white">
+                <h3 className="text-2xl font-serif font-bold">Dr. B. R. Patil</h3>
+                <p className="text-indigo-300 font-medium">Principal, DVS Polytechnic College</p>
+              </div>
+            </div>
+            <div className="w-full lg:w-3/5 p-12 lg:p-20 flex flex-col justify-center">
+              <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-4 block">Principal&apos;s Message</span>
+              <h2 className="font-serif text-4xl font-bold text-slate-900 mb-8 leading-tight">
+                Nurturing Technical Excellence with Ethical Values
+              </h2>
+              <div className="space-y-6 text-slate-600 text-lg leading-relaxed italic">
+                <p>
+                  &quot;At DVS Polytechnic College, we believe that education is not just about acquiring knowledge, but about developing the skills and character needed to thrive in a rapidly changing world. Our mission is to provide a supportive and challenging environment where students can explore their potential and become leaders in their fields.&quot;
+                </p>
+                <p>
+                  &quot;We are committed to providing our students with the best possible technical education, supported by state-of-the-art facilities and a dedicated faculty. Our curriculum is designed to be industry-relevant, ensuring that our graduates are well-prepared for the challenges of the professional world.&quot;
+                </p>
+              </div>
+              <div className="mt-10 pt-10 border-t border-slate-100 flex items-center gap-4">
+                <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-serif text-2xl">
+                  B
+                </div>
+                <div>
+                  <div className="font-bold text-slate-900">Dr. B. R. Patil</div>
+                  <div className="text-sm text-slate-500">M.Tech, Ph.D. in Mechanical Engineering</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Departments Preview */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center mb-16">
           <h2 className="font-serif text-4xl font-bold text-slate-900 mb-4">Our Departments</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
@@ -150,7 +194,7 @@ export default function HomePage() {
             <motion.div 
               key={i}
               whileHover={{ y: -5 }}
-              className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group"
+              className="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group"
             >
               <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 {dept.icon}
