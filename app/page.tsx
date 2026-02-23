@@ -136,13 +136,13 @@ export default function HomePage() {
             <div className="w-full lg:w-2/5 relative min-h-[400px]">
               <Image 
                 src="https://picsum.photos/800/1000?grayscale" 
-                alt="Principal Dr. B. R. Patil" 
+                alt="Principal Poornima" 
                 fill 
                 className="object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-8 text-white">
-                <h3 className="text-2xl font-serif font-bold">Dr. B. R. Patil</h3>
+                <h3 className="text-2xl font-serif font-bold">Poornima</h3>
                 <p className="text-indigo-300 font-medium">Principal, DVS Polytechnic College</p>
               </div>
             </div>
@@ -161,10 +161,10 @@ export default function HomePage() {
               </div>
               <div className="mt-10 pt-10 border-t border-slate-100 flex items-center gap-4">
                 <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-serif text-2xl">
-                  B
+                  P
                 </div>
                 <div>
-                  <div className="font-bold text-slate-900">Dr. B. R. Patil</div>
+                  <div className="font-bold text-slate-900">Poornima</div>
                   <div className="text-sm text-slate-500">M.Tech, Ph.D. in Mechanical Engineering</div>
                 </div>
               </div>

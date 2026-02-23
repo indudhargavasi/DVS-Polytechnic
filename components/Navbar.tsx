@@ -28,7 +28,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const isHomePage = pathname === '/';
+  const isHomePage = pathname ? pathname === '/' : false;
   const shouldBeTransparent = isHomePage && !scrolled;
 
   return (

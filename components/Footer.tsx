@@ -71,7 +71,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-center text-xs">
-        <p>&copy; {new Date().getFullYear()} DVS Polytechnic College. All rights reserved. | Designed for Excellence</p>
+        <p>&copy; 2026 DVS Polytechnic College. All rights reserved. | Designed for Excellence</p>
       </div>
     </footer>
   );

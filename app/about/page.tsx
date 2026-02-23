@@ -81,7 +81,7 @@ export default function AboutPage() {
             {[
               { name: 'Dr. K. G. Somashekar', role: 'Chairman, DVS Samithi', image: 'https://picsum.photos/400/500?5' },
               { name: 'Prof. M. S. Venkatesh', role: 'Secretary, DVS Samithi', image: 'https://picsum.photos/400/500?6' },
-              { name: 'Dr. B. R. Patil', role: 'Principal, DVS Polytechnic', image: 'https://picsum.photos/400/500?7' },
+              { name: 'Poornima', role: 'Principal, DVS Polytechnic', image: 'https://picsum.photos/400/500?7' },
             ].map((leader, i) => (
               <div key={i} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
                 <div className="h-80 relative">
