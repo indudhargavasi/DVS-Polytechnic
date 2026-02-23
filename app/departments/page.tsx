@@ -23,15 +23,6 @@ const departments = [
     labs: ['Analog Electronics Lab', 'Digital Electronics Lab', 'Communication Lab', 'Microprocessor Lab'],
   },
   {
-    id: 'me',
-    title: 'Mechanical Engineering',
-    icon: <Settings size={32} />,
-    image: 'https://picsum.photos/800/600?10',
-    description: 'Covers machine design, manufacturing processes, thermodynamics, and CAD/CAM technologies.',
-    intake: 60,
-    labs: ['Machine Shop', 'Thermal Engineering Lab', 'Hydraulics Lab', 'CAD/CAM Lab'],
-  },
-  {
     id: 'ce',
     title: 'Civil Engineering',
     icon: <HardHat size={32} />,
@@ -39,24 +30,6 @@ const departments = [
     description: 'Focuses on construction, structural design, surveying, and environmental engineering.',
     intake: 60,
     labs: ['Surveying Lab', 'Material Testing Lab', 'Geotechnical Lab', 'Environmental Lab'],
-  },
-  {
-    id: 'ee',
-    title: 'Electrical & Electronics',
-    icon: <Zap size={32} />,
-    image: 'https://picsum.photos/800/600?12',
-    description: 'Covers electrical machines, power systems, control systems, and renewable energy sources.',
-    intake: 60,
-    labs: ['Electrical Machines Lab', 'Power Electronics Lab', 'Control Systems Lab', 'Measurements Lab'],
-  },
-  {
-    id: 'ae',
-    title: 'Automobile Engineering',
-    icon: <Car size={32} />,
-    image: 'https://picsum.photos/800/600?13',
-    description: 'Deals with vehicle design, engine systems, chassis construction, and automotive electronics.',
-    intake: 40,
-    labs: ['Engine Lab', 'Chassis Lab', 'Auto Electrical Lab', 'Service Station'],
   },
 ];
 

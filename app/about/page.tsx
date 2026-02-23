@@ -7,8 +7,14 @@ export default function AboutPage() {
     <div className="pt-24">
       {/* Header */}
       <section className="bg-slate-900 py-24 text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <Image src="https://picsum.photos/1920/400?3" alt="Banner" fill className="object-cover" referrerPolicy="no-referrer" />
+        <div className="absolute inset-0 opacity-30">
+          <Image 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920&grayscale=true" 
+            alt="Banner" 
+            fill 
+            className="object-cover grayscale brightness-50" 
+            referrerPolicy="no-referrer" 
+          />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">About Our Institution</h1>
@@ -79,7 +85,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Dr. K. G. Somashekar', role: 'Chairman, DVS Samithi', image: 'https://picsum.photos/400/500?5' },
+              { name: 'S P Dinesh', role: 'Chairman, DVS Samithi', image: 'https://picsum.photos/400/500?5' },
               { name: 'Prof. M. S. Venkatesh', role: 'Secretary, DVS Samithi', image: 'https://picsum.photos/400/500?6' },
               { name: 'Poornima', role: 'Principal, DVS Polytechnic', image: 'https://picsum.photos/400/500?7' },
             ].map((leader, i) => (

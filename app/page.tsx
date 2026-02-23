@@ -13,10 +13,10 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://picsum.photos/1920/1080?grayscale" 
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1920" 
             alt="College Campus" 
             fill 
-            className="object-cover opacity-40"
+            className="object-cover opacity-60"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900"></div>
@@ -30,7 +30,7 @@ export default function HomePage() {
           >
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-tight mb-8">
               Building the Future <br />
-              <span className="text-indigo-400 italic">One Engineer</span> at a Time
+              <span className="text-indigo-400 italic">DVS Polytechnic</span>
             </h1>
             <p className="max-w-2xl mx-auto text-slate-300 text-lg md:text-xl mb-10 leading-relaxed">
               Providing world-class technical education with a focus on practical skills, 
@@ -39,93 +39,18 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/admissions" 
-                className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-indigo-700 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-indigo-600/20"
+                className="bg-indigo-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-indigo-700 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-indigo-600/20"
               >
                 Apply for 2026-27 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 
                 href="/departments" 
-                className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center"
+                className="bg-slate-800/40 backdrop-blur-md text-white border border-slate-700 px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-800/60 transition-all flex items-center justify-center"
               >
                 Explore Courses
               </Link>
             </div>
           </motion.div>
-        </div>
-
-        {/* Stats Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 bg-white/5 backdrop-blur-xl border-t border-white/10 py-8 hidden lg:block">
-          <div className="max-w-7xl mx-auto px-4 grid grid-cols-4 gap-8">
-            {[
-              { label: 'Years of Excellence', value: '40+' },
-              { label: 'Expert Faculty', value: '50+' },
-              { label: 'Success Rate', value: '98%' },
-              { label: 'Active Students', value: '1200+' },
-            ].map((stat, i) => (
-              <div key={i} className="text-center border-r border-white/10 last:border-0">
-                <div className="text-3xl font-serif font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-semibold">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Highlights Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-4 block">Why Choose Us</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">
-                A Legacy of Technical <br /> Education & Innovation
-              </h2>
-              <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-                DVS Polytechnic College has been at the forefront of technical education in Karnataka for over four decades. 
-                Our commitment to excellence is reflected in our state-of-the-art labs, industry partnerships, and 
-                a curriculum that evolves with global trends.
-              </p>
-              
-              <div className="space-y-4">
-                {[
-                  'AICTE Approved & DTE Karnataka Affiliated',
-                  'Industry-Integrated Learning Modules',
-                  'Dedicated Placement & Career Guidance Cell',
-                  'Modern Infrastructure & Advanced Laboratories'
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="text-emerald-500" size={20} />
-                    <span className="font-medium text-slate-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Link href="/about" className="inline-flex items-center gap-2 mt-10 text-indigo-600 font-bold hover:gap-3 transition-all">
-                Learn more about our history <ArrowRight size={18} />
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="h-64 relative rounded-3xl overflow-hidden">
-                  <Image src="https://picsum.photos/400/600?1" alt="Lab" fill className="object-cover" referrerPolicy="no-referrer" />
-                </div>
-                <div className="h-48 bg-indigo-600 rounded-3xl p-8 flex flex-col justify-end text-white">
-                  <BookOpen size={32} className="mb-4" />
-                  <h3 className="font-bold text-xl">Quality Education</h3>
-                </div>
-              </div>
-              <div className="space-y-4 pt-12">
-                <div className="h-48 bg-slate-900 rounded-3xl p-8 flex flex-col justify-end text-white">
-                  <Users size={32} className="mb-4" />
-                  <h3 className="font-bold text-xl">Expert Mentors</h3>
-                </div>
-                <div className="h-64 relative rounded-3xl overflow-hidden">
-                  <Image src="https://picsum.photos/400/600?2" alt="Campus" fill className="object-cover" referrerPolicy="no-referrer" />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -185,11 +110,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { title: 'Computer Science', desc: 'Master software development, networking, and AI.', icon: <Building2 /> },
-            { title: 'Mechanical Engineering', desc: 'Design and build the machines of tomorrow.', icon: <Building2 /> },
             { title: 'Electronics & Comm.', desc: 'Explore the world of circuits and communication.', icon: <Building2 /> },
             { title: 'Civil Engineering', desc: 'Shape the infrastructure of our cities.', icon: <Building2 /> },
-            { title: 'Electrical & Electronics', desc: 'Powering the world through innovation.', icon: <Building2 /> },
-            { title: 'Automobile Engineering', desc: 'Drive the future of transportation.', icon: <Building2 /> },
           ].map((dept, i) => (
             <motion.div 
               key={i}
