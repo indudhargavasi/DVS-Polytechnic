@@ -112,6 +112,7 @@ export default function HomePage() {
             { title: 'Computer Science', desc: 'Master software development, networking, and AI.', icon: <Building2 /> },
             { title: 'Electronics & Comm.', desc: 'Explore the world of circuits and communication.', icon: <Building2 /> },
             { title: 'Civil Engineering', desc: 'Shape the infrastructure of our cities.', icon: <Building2 /> },
+            { title: 'Artificial Intelligence', desc: 'Learn machine learning, data science, and neural networks.', icon: <Building2 /> },
           ].map((dept, i) => (
             <motion.div 
               key={i}

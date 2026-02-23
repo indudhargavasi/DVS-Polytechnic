@@ -31,6 +31,15 @@ const departments = [
     intake: 60,
     labs: ['Surveying Lab', 'Material Testing Lab', 'Geotechnical Lab', 'Environmental Lab'],
   },
+  {
+    id: 'ai',
+    title: 'Artificial Intelligence & Machine Learning',
+    icon: <Laptop size={32} />,
+    image: 'https://picsum.photos/800/600?25',
+    description: 'Specialized course focusing on machine learning algorithms, data science, neural networks, and AI application development.',
+    intake: 60,
+    labs: ['AI Research Lab', 'Machine Learning Lab', 'Data Science Lab', 'Robotics Lab'],
+  },
 ];
 
 export default function DepartmentsPage() {
